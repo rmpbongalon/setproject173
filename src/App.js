@@ -6,7 +6,6 @@ import 'bootstrap/dist/js/bootstrap.js';
 import './App.css';
 import EvalPage from './components/Form/EvalPage'
 import Home from './components/Home/Home';
-
 import LoginPage from "./components/Login/LoginPage"
 
 require('react-dom');

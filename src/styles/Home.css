@@ -10,3 +10,19 @@
     position: absolute;
     color: rgba(0, 141, 133, 0.06);
 }
+
+.home-main-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.home-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: red; */
+    padding:1rem;
+    margin:3rem;
+    width:100%;
+}

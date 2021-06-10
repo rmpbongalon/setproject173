@@ -9,7 +9,7 @@ import 'bootstrap/js/dist/dropdown';
 class Sidebar extends Component{
     render(){
         return(
-            <div className="sidebar-main" style={{width: '400px', height: '100vh'}}>
+            <div className="sidebar-main" style={{ height: '100vh'}}>
                 <div className="sidebar-text" style={{width: '350px'}}>
                     <h1 className="textName">Welcome, User</h1>
                     <h2 className="semester">2nd Semester</h2> 

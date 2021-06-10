@@ -1,0 +1,52 @@
+.task-list{
+    background-color:rgba(255, 255, 255, 0.39);
+    /* min-height:100%; */
+    min-width: 40%;
+    /* margin-top: 3rem; */
+    margin:1rem;
+    padding:1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.task-list a{
+    text-decoration: none;
+    color: black;
+}
+
+#major-course-eval {
+    font-size: 1rem;
+    font-family: "Archivo", sans-serif;
+    color:#008D85;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    text-decoration: bold;
+}
+
+.task-rate{
+    display:flex;
+    flex-direction: row;
+    background-color: white;
+    text-align: left;
+    padding:0.7rem;
+    border-radius:1rem;
+    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+    cursor:pointer;
+}
+
+.task-rate:active{
+    transform: translateY(1px);
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.check-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.task-text h1, .task-text h2{
+    font-size: 1rem;
+    margin:0;
+    padding-left:1rem;
+}
