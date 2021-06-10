@@ -15,7 +15,9 @@ const LoginPage = () => {
                     <h2>SET Portal</h2>
                 </div>
 
-                <button className="sais-sign-in"> Sign in with SAIS</button>
+                <a href = "/home">
+                    <button className="sais-sign-in"> Sign in with SAIS</button>
+                </a>
 
                 <h3 id ="or-sign-in">or Sign In with UP Mail:</h3>
 
@@ -38,9 +40,11 @@ const LoginPage = () => {
                 {/* TO-DO: Add link to */}
                 <p id="forgot-password">Forgot password?</p>
 
-                <button className="login-button">
-                    Log in
-                </button>
+                <a href = "/home">
+                    <button className="login-button">
+                        Log in
+                    </button>
+                </a>
                 
             </div>
 

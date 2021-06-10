@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import './App.css';
 import EvalPage from './components/Form/EvalPage'
-import ConfirmModal from './components/Modal/ConfirmModal';
 import Home from './components/Home/Home';
 
 import LoginPage from "./components/Login/LoginPage"
