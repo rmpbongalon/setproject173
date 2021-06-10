@@ -1,0 +1,76 @@
+.container {
+    background-color: green;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 16rem;
+
+}
+
+.textName {
+    position: absolute;
+    width: 400px;
+    height: 48px;
+    left: 100px;
+    top: 280px;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 43px;
+    line-height: 16px;
+    text-align: center;
+
+    display: flex;
+
+    color: #086189;
+}
+
+.semester {
+    position: absolute;
+    width: 160px;
+    height: 30px;
+    left: 218px;
+    top: 350px;
+
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 16px;
+    /* or 53% */
+
+    display: flex;
+
+    color: rgba(0, 141, 133, 0.56);
+}
+
+.schoolyear {
+    position: absolute;
+    width: 193px;
+    height: 30px;
+    left: 217px;
+    top: 390px;
+
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 16px;
+    /* or 53% */
+
+    display: flex;
+
+    color: rgba(0, 141, 133, 0.56);
+}
+
+.name {
+    font-family: "Archivo";
+    font-size: 18px;
+    font-weight: 400;
+    color: #008D85;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}

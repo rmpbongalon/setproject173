@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import './EvalPage.css'
+import '../../styles/EvalPage.css'
 import ConfirmModal from '../Modal/ConfirmModal'
 import MissingModal from '../Modal/MissingModal'
 /*

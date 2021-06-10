@@ -1,10 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect} from "react-router-dom";
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 import './App.css';
-import EvalPage from './Form/EvalPage'
-import ConfirmModal from './Modal/ConfirmModal';
+import EvalPage from './components/Form/EvalPage'
+import ConfirmModal from './components/Modal/ConfirmModal';
+import Home from './components/Home/Home';
 
-import LoginPage from "./components/login/loginPage"
+import LoginPage from "./components/Login/LoginPage"
 
 require('react-dom');
 window.React2 = require('react');
@@ -17,15 +21,18 @@ function App() {
             
             <BrowserRouter>
                 <Switch>
-                    <Route path ='/home'
-                    render= {() => <LoginPage/>}
-                    />
+                    <Route path ='/login'
+                    render= {() => <LoginPage/>} />
+
+                    <Route path ='/evaluate'
+                    render = {() => <EvalPage/>} />
 
                     <Route path ='/home'
-                    render = {() => <EvalPage/>}
-                    />
+                    render={() => <Home/>} />
 
-                    <Redirect exact from="/" to="/home" />
+
+
+                    <Redirect exact from="/" to="/login" />
                     <Redirect to="/not-found" />
                 </Switch>
             </BrowserRouter>
