@@ -3,25 +3,31 @@
 .login-main-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     height:100vh; 
     font-family: 'Archivo', sans-serif;
+    background: "url(../../public/uplb-bg.jpg)"; /* bakit ayawwwww */
+    background-color:#005E81;
+    width: 100wh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    align-items: center;
 }
 
-.login-left{
-    background-color: white;
-    height:100%;
-    width:43%
-}
-
-.login-right{
-    background-color: #005E81;
-    height:100%;
-    width: 57%
-}
-#rightpic{
-   height:100%;
-   width:100%;
-   object-fit:contain;
+.middle-container{
+    /* margin-top: 2.5%;
+    margin-bottom:2.5%; */
+    /* display: flex;
+    flex-direction: column; */
+    padding:3%;
+    background-color:rgba(255, 255, 255, 0.856);
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    width: 25%;
+    min-height: 100px;
 }
 
 .login-header{
@@ -31,12 +37,93 @@
 .login-header h1 {
     margin-top:0.5rem;
     margin-bottom:0;
+    font-size:1.25rem;
 }
 .login-header h2{
     margin:0.5rem;
     font-weight: normal;
+    font-size:1rem;
 }
 
 #uplogo{
-    height:72px;
+    height:60px;
+}
+
+.middle-container h3{
+    color:#b1b1b1;
+    font-weight: normal;
+    font-size:1rem;
+}
+
+.sais-sign-in{
+    width:100%;
+    background-color:white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.6rem rgb(0,0,0, 0.17);
+    padding:0.5rem;
+    margin-top:1rem;
+    cursor:pointer;
+    /* margin-bottom:1rem; */
+}
+
+.sais-sign-in:active{
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.288);
+    transform: translateY(1px);
+}
+
+#or-sign-in{
+    font-size: 0.8rem;
+    margin:1.25rem;
+}
+
+.creds-fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom:1rem;
+}
+
+.creds-fields label{
+    font-weight: 500;
+    color:#008D85
+}
+
+.creds-fields input{
+    width:100%;
+    height:2rem;
+    border-color:#d1d1d1;
+    border-style:solid;
+    border-width:0.1rem;
+    border-radius: 0.3rem;;
+}
+
+#forgot-password{
+    color:#52B4BD;
+    text-decoration: underline;
+    float:right;
+    margin:0;
+    cursor:pointer;
+}
+
+.login-button{
+    width:100%;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    padding:0.75rem;
+    background-color: #005E81;
+    color:white;
+    font-weight:300;
+    border-color:#005E81;
+    border-style: solid;
+    border-radius: 0.75rem;
+    box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+}
+
+.login-button:active{
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.425);
+    transform: translateY(0.5px);
 }
