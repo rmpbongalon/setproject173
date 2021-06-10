@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap');
+
+body {
+    background-color: #ecf4f4;
+}
+
+.infoHeader {
+    font-family:  'Open Sans', sans-serif;
+    font-weight: 600;
+    padding-top: 1%;
+    position: sticky;
+    top: 0;
+    padding-left: 3%;
+    padding-bottom: 1%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.infoHeader h1 {
+    color: #086189;
+    font-weight: 700;
+}
+
+.infoHeader h2 {
+    color: #008D85;
+
+}
+
+.rateP {
+    padding-top: 2%;
+    font-family:  'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.formCard {
+    font-family:  'Open Sans', sans-serif;
+    font-size: 21px;
+    max-width: 50%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 3%;
+}
+
+.question {
+    background-color: #008D85;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: white;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.answers {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 4%;
+}
+
+.answer {
+    margin-right: 5%;
+    font-family: 'Archivo', sans-serif;
+    color: #008D85;
+}
+
+.category {
+    margin-bottom: 5%;
+    padding-left: 3%;
+}
+
+.category-heading {
+    color: #086189;
+    font-family:  'Open Sans', sans-serif;
+}
+
+.submitBtn {
+    border: none;
+    float: right;
+    width: 150px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #008D85;
+    margin-right: 15%;
+    margin-bottom: 2%;
+    font-family:  'Open Sans', sans-serif;
+    color: white;
+    border-radius: 15px;
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+    background-color: #086189;
+}
