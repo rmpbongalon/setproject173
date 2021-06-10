@@ -1,8 +1,12 @@
 import EvalPage from './Form/EvalPage'
+import ConfirmModal from './Modal/ConfirmModal';
 
 function App() {
   return (
-    <EvalPage/>
+    <div>
+      <EvalPage></EvalPage>
+      {/* <ConfirmModal></ConfirmModal> */}
+    </div>
   );
 }
 export default App;

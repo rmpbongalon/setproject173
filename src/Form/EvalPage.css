@@ -2,14 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap');
 
 body {
-    padding-left: 3%;
     background-color: #ecf4f4;
 }
 
 .infoHeader {
     font-family:  'Open Sans', sans-serif;
     font-weight: 600;
-    padding-top: 3%;
+    padding-top: 1%;
+    position: sticky;
+    top: 0;
+    padding-left: 3%;
+    padding-bottom: 1%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .infoHeader h1 {
@@ -19,16 +24,19 @@ body {
 
 .infoHeader h2 {
     color: #008D85;
+
 }
 
 .rateP {
     padding-top: 2%;
+    font-family:  'Open Sans', sans-serif;
+    font-size: 20px;
 }
 
 .formCard {
     font-family:  'Open Sans', sans-serif;
     font-size: 21px;
-    max-width: 85%;
+    max-width: 50%;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -60,6 +68,7 @@ body {
 
 .category {
     margin-bottom: 5%;
+    padding-left: 3%;
 }
 
 .category-heading {
