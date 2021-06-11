@@ -6,6 +6,7 @@ import '../../styles/Home.css';
 
 import SideBar from "./Sidebar";
 import TaskList from "./TaskList";
+import TaskListGE from "./TaskListGE";
 
 class Home extends Component{
     render(){
@@ -14,6 +15,7 @@ class Home extends Component{
                 <SideBar/>
                 <div className="home-right">
                     <TaskList/>
+                    <TaskListGE/>
                     {/* <TaskList/> */}
                 </div>
             </div>

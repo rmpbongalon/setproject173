@@ -75,3 +75,7 @@
     word-break:break-all;
 }
 
+.dropdown {
+    width:100%;
+    float:right;
+}

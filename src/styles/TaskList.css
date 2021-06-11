@@ -1,12 +1,14 @@
 .task-list{
     background-color:rgba(255, 255, 255, 0.39);
-    /* min-height:100%; */
+    min-height:100%;
     min-width: 40%;
+    /* max-height:100%; */
     /* margin-top: 3rem; */
     margin:1rem;
     padding:1rem;
     border-radius: 1rem;
     overflow: hidden;
+    overflow-y: auto;
 }
 
 .task-list a{
@@ -14,7 +16,7 @@
     color: black;
 }
 
-#major-course-eval {
+#major-course-eval, #ge-eval {
     font-size: 1rem;
     font-family: "Archivo", sans-serif;
     color:#008D85;
@@ -23,7 +25,7 @@
     text-decoration: bold;
 }
 
-.task-rate{
+.task-rate, .task-rate-done{
     display:flex;
     flex-direction: row;
     background-color: white;
@@ -32,6 +34,17 @@
     border-radius:1rem;
     box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
     cursor:pointer;
+    margin-bottom: 0.8rem;
+}
+
+.task-rate-done{
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: none;
+    text-decoration: line-through;
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.123);
+    cursor:default;
+    color: #c8c8c8
+    
 }
 
 .task-rate:active{
