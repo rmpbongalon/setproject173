@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+.prompt {
+    left: 48%;
+    top: 40%;
+    position: absolute
+}
+
+.checklens {
+    left: 200%;
+    top: 40%;
+    position: relative
+}
+
+.check {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    left: 12%; 
+    top: 12%; 
+    border-radius: 0px;
+    opacity: 50%;
+}
+
+.lens {
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    left: 0;
+    top: 0;
+    border-radius: 0px;
+    opacity: 50%;
+}
+
+.text {
+    position: absolute;
+    width: 600px;
+    height: 20px;
+    top: 130%;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(0, 141, 133, 0.6);
+}
