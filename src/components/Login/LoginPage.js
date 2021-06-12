@@ -18,31 +18,10 @@ const LoginPage = () => {
                 <a href = "/home">
                     <button className="sais-sign-in"> Sign in with SAIS</button>
                 </a>
-{/* 
-                <h3 id ="or-sign-in">or Sign In with UP Mail:</h3>
-
-                <div className ="creds-fields">
-                    <label htmlFor="email">Email Address</label>
-                    <input 
-                        type="email"
-                        placeholder="example@up.edu.ph"
-                        className="sign-in-fields"/>
-                </div>
-
-                <div className ="creds-fields">
-                    <label htmlFor="email">Password</label>
-                    <input 
-                        type="password"
-                        placeholder="password"
-                        className="sign-in-fields"/>
-                </div> */}
-
-                {/* TO-DO: Add link to */}
-                {/* <p id="forgot-password">Forgot password?</p> */}
 
                 <a href = "/home">
                     <button className="login-button">
-                        Log in
+                        Sign In with UP Mail
                     </button>
                 </a>
                 

@@ -6,7 +6,7 @@
     justify-content: space-around;
     height:100vh; 
     font-family: 'Archivo', sans-serif;
-    background-image: url("../assets/oble.png");
+    background-image: url("../assets/uplb-carillion.png");
     /* width: 100wh; */
     background-position: 0 15%;
     background-repeat: no-repeat;
@@ -113,10 +113,10 @@
     margin-top:1rem;
     margin-bottom:1rem;
     padding:0.75rem;
-    background-color: #005E81;
+    background-color: #008D85;
     color:white;
     font-weight:300;
-    border-color:#005E81;
+    border-color:#008D85;
     border-style: solid;
     border-radius: 0.75rem;
     box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.274);
