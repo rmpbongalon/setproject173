@@ -20,7 +20,7 @@ class Sidebar extends Component{
 
                 <br/><br/><br/><br/><br/><br/>
                 <div className="dropdown">
-                    <a href="#" className="d-flex flex-row-reverse align-items-center text-decoration-none dropdown-toggle" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#" className="d-flex flex-row justify-content-end align-items-center text-decoration-none dropdown-toggle" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="https://static.overlay-tech.com/assets/a9db6e71-27fb-49ff-ba41-813870259896.svg" alt="" width="32" height="32" className="rounded-circle me-2"/>
                         <strong style={{fontFamily:'Archivo', color: '#008D85'}}>User McUsersson</strong>
                     </a>

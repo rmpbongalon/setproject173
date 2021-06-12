@@ -18,7 +18,7 @@ const LoginPage = () => {
                 <a href = "/home">
                     <button className="sais-sign-in"> Sign in with SAIS</button>
                 </a>
-
+{/* 
                 <h3 id ="or-sign-in">or Sign In with UP Mail:</h3>
 
                 <div className ="creds-fields">
@@ -35,10 +35,10 @@ const LoginPage = () => {
                         type="password"
                         placeholder="password"
                         className="sign-in-fields"/>
-                </div>
+                </div> */}
 
                 {/* TO-DO: Add link to */}
-                <p id="forgot-password">Forgot password?</p>
+                {/* <p id="forgot-password">Forgot password?</p> */}
 
                 <a href = "/home">
                     <button className="login-button">
