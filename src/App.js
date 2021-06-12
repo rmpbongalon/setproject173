@@ -21,9 +21,9 @@ function App() {
                 <Switch>
                     <Route path ='/login'
                     render= {() => <LoginPage/>} />
-
+                  
                     <Route path ='/evaluate'
-                    render = {() => <EvalPage/>} />
+                    component={EvalPage}/>
 
                     <Route path ='/home'
                     render={() => <Home/>} />

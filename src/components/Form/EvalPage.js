@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { Redirect } from 'react-router-dom'
 import '../../styles/EvalPage.css'
 import ConfirmModal from '../Modal/ConfirmModal'
 import MissingModal from '../Modal/MissingModal'
@@ -12,6 +13,7 @@ EvalPage component
 
 
 const EvalPage = (props) => {
+    const currentProf = props.location.prof
 
     const [rate, setRate] = useState(null)
 
@@ -31,12 +33,18 @@ const EvalPage = (props) => {
     const [showModal, setShowModal] = useState(false) // Confirmation modal for submission
     const [showMissingModal, setShowMissingModal] = useState(false) // Modal when one of the form is not complete
 
+    if(currentProf == null) {
+        return(
+            <Redirect to="/home"></Redirect>
+        )
+    }
+
     return (
         <>
             <div className="infoHeader">
                 <h1> Currently Evaluating:</h1>
-                <h2> Prof. name </h2>  { /*This will be replaced with props.name */}
-                <h2> Subject </h2> {/*  This will be replaced with props.subject */}
+                <h2> {currentProf.name}</h2>  { /*This will be replaced with props.name */}
+                <h2> {currentProf.subject} </h2> {/*  This will be replaced with props.subject */}
                 
             </div>
             
@@ -285,7 +293,7 @@ const EvalPage = (props) => {
  
             Submit 
             </button>
-            <ConfirmModal onClose={()=> setShowModal(false)} show={showModal}></ConfirmModal>
+            <ConfirmModal onClose={()=> setShowModal(false)} show={showModal} id={currentProf.id} type={currentProf.type}></ConfirmModal>
             <MissingModal onClose={()=>setShowMissingModal(false)} show={showMissingModal} />
         </>
     )

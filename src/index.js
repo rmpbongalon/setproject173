@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {TaskProvider} from './components/Contexts/TaskContext'
+import {GETaskProvider} from './components/Contexts/GETaskContext'
 
 ReactDOM.render(
   <React.StrictMode>
+    <GETaskProvider>
+    <TaskProvider>
     <App />
+    </TaskProvider>
+    </GETaskProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

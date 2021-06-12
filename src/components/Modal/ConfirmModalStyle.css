@@ -47,7 +47,7 @@
     border-radius: 20px;
     width: 200px;
     color: white;
-    background-color: #008D85;;
+    background-color: #008D85;
 }
 
 .choices-content button:hover {
@@ -55,3 +55,24 @@
     background-color: #025854;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.modalBtn {
+    background-color: #008D85;
+    padding: 4%;
+    margin-left: 6%;
+    border-radius: 30px;
+}
+
+.modalBtn:hover {
+    cursor: pointer;
+    background-color: #015854;
+}
