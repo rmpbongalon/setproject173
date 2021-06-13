@@ -145,6 +145,10 @@ body {
     
 }
 
+.categoryHide {
+    display: none;
+}
+
 .submitBtn {
     border: none;
     float: right;

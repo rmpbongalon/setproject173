@@ -35,41 +35,26 @@ export default function EvalPage(props){
     const [showMissingModal, setShowMissingModal] = useState(false) // Modal when one of the form is not complete
     const [showGoHomeModal, setShowGoHomeModal] = useState(false)
 
-    const [showOne, setShowOne] = useState(true);
-    const [showTwo, setShowTwo] = useState(false);
-    const [showThree, setShowThree] = useState(false);
-    const [showFour, setShowFour] = useState(false);
+    const [showPart, setShowPart] = useState(1);
 
     const toggleOne = (e) => {
         e.preventDefault();
-        setShowTwo(false);
-        setShowThree(false);
-        setShowFour(false);
-        setShowOne(true);
+        setShowPart(1);
     };
 
     const toggleTwo = (e) => {
         e.preventDefault();
-        setShowOne(false);
-        setShowThree(false);
-        setShowFour(false);
-        setShowTwo(true);
+        setShowPart(2);
     };
 
     const toggleThree = (e) => {
         e.preventDefault();
-        setShowOne(false);
-        setShowTwo(false);
-        setShowFour(false);
-        setShowThree(true);
+        setShowPart(3);
     };
 
     const toggleFour = (e) => {
         e.preventDefault();
-        setShowOne(false);
-        setShowTwo(false);
-        setShowThree(false);
-        setShowFour(true);
+        setShowPart(4);
     };
 
     if(currentProf == null) {
@@ -93,16 +78,15 @@ export default function EvalPage(props){
             
             <div className="bodyCont">
             <div className="outline">
-                <button className={!showOne ? "buttonNormal": "buttonLined"} onClick={toggleOne}>Part I: Preparedness</button>
-                <button className={!showTwo ? "buttonNormal": "buttonLined"} onClick={toggleTwo}>Part II: Student-Faculty Relationship</button>
-                <button className={!showThree ? "buttonNormal": "buttonLined"} onClick={toggleThree}>Part III: Time Management</button>
-                <button className={!showFour ? "buttonNormal": "buttonLined"} onClick={toggleFour}>Part IV: Quality of Requirements</button>
+                <button className={showPart===1 ? "buttonLined": "buttonNormal"} onClick={toggleOne}>Part I: Preparedness</button>
+                <button className={showPart===2 ? "buttonLined": "buttonNormal"} onClick={toggleTwo}>Part II: Student-Faculty Relationship</button>
+                <button className={showPart===3 ? "buttonLined": "buttonNormal"} onClick={toggleThree}>Part III: Time Management</button>
+                <button className={showPart===4 ? "buttonLined": "buttonNormal"} onClick={toggleFour}>Part IV: Quality of Requirements</button>
             </div>
 
             <div className="formCont">
                 <center>
-                {showOne ?
-                <div className="category">
+                <div className={showPart===1 ? "category":"categoryHide"}>
                     <div className="formCard">
                         <p className="question"> The faculty-in-charge is always ready with their lesson plans. </p>
                         <div className="answers">
@@ -158,19 +142,17 @@ export default function EvalPage(props){
                         </div>
                     </div>
                 </div>
-                : null
-                }
 
-            {showTwo ?
-            <div className="category">
-                <div className="formCard">
-                    <p className="question"> The faculty-in-charge is always available during consultation hours </p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="2answer1" onChange={(e) => onValueChange(e, 5)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="2answer1" onChange={(e) => onValueChange(e, 5)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="2answer1" onChange={(e) => onValueChange(e, 5)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="2answer1" onChange={(e) => onValueChange(e, 5)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="2answer1" onChange={(e) => onValueChange(e, 5)}/> 5 </label>
+                <div className={showPart===2 ? "category":"categoryHide"}>
+                    <div className="formCard">
+                        <p className="question"> The faculty-in-charge is always available during consultation hours </p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="2answer1" onChange={(e) => onValueChange(e, 5)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="2answer1" onChange={(e) => onValueChange(e, 5)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="2answer1" onChange={(e) => onValueChange(e, 5)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="2answer1" onChange={(e) => onValueChange(e, 5)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="2answer1" onChange={(e) => onValueChange(e, 5)}/> 5 </label>
+                        </div>
                     </div>
 
                     <div className="formCard">
@@ -217,20 +199,17 @@ export default function EvalPage(props){
                         </div>
                     </div>
                 </div>
-            </div>
-            : null
-            }
 
-            {showThree ?
-            <div className="category">
-                <div className="formCard">
-                    <p className="question"> The faculty-in-charge starts the classes on time. </p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="3answer1" onChange={(e) => onValueChange(e, 10)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="3answer1" onChange={(e) => onValueChange(e, 10)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="3answer1" onChange={(e) => onValueChange(e, 10)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="3answer1" onChange={(e) => onValueChange(e, 10)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="3answer1" onChange={(e) => onValueChange(e, 10)}/> 5 </label>
+                <div className={showPart===3 ? "category":"categoryHide"}>
+                    <div className="formCard">
+                        <p className="question"> The faculty-in-charge starts the classes on time. </p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="3answer1" onChange={(e) => onValueChange(e, 10)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="3answer1" onChange={(e) => onValueChange(e, 10)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="3answer1" onChange={(e) => onValueChange(e, 10)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="3answer1" onChange={(e) => onValueChange(e, 10)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="3answer1" onChange={(e) => onValueChange(e, 10)}/> 5 </label>
+                        </div>
                     </div>
 
                     <div className="formCard">
@@ -277,20 +256,17 @@ export default function EvalPage(props){
                         </div>
                     </div>
                 </div>
-            </div>
-            : null
-            }
-
-            {showFour ?            
-            <div className="category">
-                <div className="formCard">
-                    <p className="question"> Instructions are organized and easy to understand. </p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="4answer1" onChange={(e) => onValueChange(e, 15)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="4answer1" onChange={(e) => onValueChange(e, 15)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="4answer1" onChange={(e) => onValueChange(e, 15)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="4answer1" onChange={(e) => onValueChange(e, 15)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="4answer1" onChange={(e) => onValueChange(e, 15)}/> 5 </label>
+            
+                <div className={showPart===4 ? "category":"categoryHide"}>
+                    <div className="formCard">
+                        <p className="question"> Instructions are organized and easy to understand. </p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="4answer1" onChange={(e) => onValueChange(e, 15)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="4answer1" onChange={(e) => onValueChange(e, 15)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="4answer1" onChange={(e) => onValueChange(e, 15)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="4answer1" onChange={(e) => onValueChange(e, 15)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="4answer1" onChange={(e) => onValueChange(e, 15)}/> 5 </label>
+                        </div>
                     </div>
 
                     <div className="formCard">
@@ -337,9 +313,6 @@ export default function EvalPage(props){
                         </div>
                     </div>
                 </div>
-            </div>
-            : null
-            }
             </center>
                 <button className="goHomeBtn" onClick={() => {
                     setShowGoHomeModal(true)
