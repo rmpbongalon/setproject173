@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import TaskList from '../Home/TaskList'
+// import TaskList from '../Home/TaskList'
 
 const tasksList = [
     {
@@ -18,17 +18,17 @@ const tasksList = [
     },
     {
         id: 2,
-        name: "Arian G. Jacildo",   
-        subject: "CMSC 123 Lecture",
+        name: "Juan Miguel Bawagan",   
+        subject: "CMSC 142 Lecture",
         isDone: "task-rate",
-        section: "ST"
+        section: "X"
     },
     {
         id: 3,
-        name: "Cristopher Claude C. Templado",   
-        subject: "CMSC 123 Laboratory",
-        isDone: "task-rate-done",
-        section: "ST-2L"
+        name: "John Patrick Albacea",   
+        subject: "CMSC 142 Laboratory",
+        isDone: "task-rate",
+        section: "X-2L"
     }
 ]
 

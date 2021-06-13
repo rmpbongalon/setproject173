@@ -18,16 +18,9 @@ const tasksList = [
     },
     {
         id: 2,
-        name: "Ben Paul dela Cruz",
-        subject: "Math 10",
-        isDone: "task-rate",
-        section: "B1"
-    },
-    {
-        id: 3,
         name: "Quan Phan",
         subject: "HK12 Tai Chi Chuan",
-        isDone: "task-rate", 
+        isDone: "task-rate-done", 
         section: "AB12"
     },
 

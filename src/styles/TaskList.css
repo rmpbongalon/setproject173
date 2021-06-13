@@ -1,12 +1,10 @@
 .task-list{
-    background-color:rgba(255, 255, 255, 0.39);
-    min-height:100%;
-    min-width: 40%;
-    /* max-height:100%; */
-    /* margin-top: 3rem; */
-    margin:1rem;
-    padding:1rem;
-    border-radius: 1rem;
+    background-color:rgba(255, 255, 255, 1);
+    height:auto;
+    min-width: 35%;
+    margin: 3rem 0;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
     overflow: hidden;
     overflow-y: auto;
 }
@@ -17,40 +15,36 @@
 }
 
 #major-course-eval, #ge-eval {
-    font-size: 1rem;
-    font-family: "Archivo", sans-serif;
-    color:#008D85;
-    padding-top:1rem;
-    padding-bottom:1rem;
-    text-decoration: bold;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    padding: 1.2rem 1.5rem 1.2rem 0;
+    padding-left: 1.5rem;
+    text-align: left;
+    background-color: #008D85;
 }
 
 .task-rate, .task-rate-done{
     display:flex;
     flex-direction: row;
-    background-color: white;
     text-align: left;
     padding:0.7rem;
     border-radius:1rem;
-    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
     cursor:pointer;
     margin-bottom: 0.8rem;
 }
 
 .task-rate-done{
-    background-color: rgba(255, 255, 255, 0.7);
     box-shadow: none;
     text-decoration: line-through;
-    box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.123);
     cursor:default;
     color: #c8c8c8
-    
 }
 
-.task-rate:active{
+/*.task-rate:active{
     transform: translateY(1px);
     box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
-}
+}*/
 
 .check-icon{
     display: flex;
@@ -58,8 +52,35 @@
     justify-content: center;
 }
 
-.task-text h1, .task-text h2{
+.task-text .subject{
+    font-size: 1rem;
+    padding-left:1rem;
+    margin:0;
+    font-weight: 550;
+}
+
+.task-rate .task-text .section{
+    font-size: 0.9rem;
+    margin:0;
+    padding-left:1rem;
+    color: gray;
+    font-weight: 300;
+}
+
+.task-rate-done .task-text .section{
+    font-size: 0.9rem;
+    margin:0;
+    padding-left:1rem;
+    font-weight: 300;
+}
+
+.task-text .prof{
     font-size: 1rem;
     margin:0;
     padding-left:1rem;
+    font-weight: 400;
+}
+
+.cardContainer {
+    padding-left: 1rem;
 }

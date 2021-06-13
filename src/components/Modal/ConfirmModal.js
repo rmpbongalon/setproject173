@@ -5,7 +5,7 @@ import GETaskContext from '../Contexts/GETaskContext'
 import {Link} from 'react-router-dom'
 import { useContext } from 'react'
 
-const ConfirmModal = (props) => {
+export default function ConfirmModal(props){
     const {tasks, setTasks} = useContext(TaskContext)
     const {GEtasks, setGETasks} = useContext(GETaskContext)
 
@@ -28,12 +28,10 @@ const ConfirmModal = (props) => {
             </div> 
             <div className="choices-content">
                 <Link to="/home">
-                    <a className="modalBtn" onClick={markTask}> Confirm </a>
-                </Link>
-                <a className="modalBtn"  onClick={props.onClose}> Cancel </a>
+                    <button className="modalBtn" onClick={markTask}> Confirm </button>
+                </Link>&nbsp;&nbsp;
+                <button className="modalBtn"  onClick={props.onClose}> Cancel </button>
             </div>
         </div>
     )
 }
-
-export default ConfirmModal

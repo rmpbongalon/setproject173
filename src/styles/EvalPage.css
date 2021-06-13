@@ -5,48 +5,122 @@ body {
     background-color: #ecf4f4;
 }
 
-.infoHeader {
-    font-family:  'Open Sans', sans-serif;
-    font-weight: 600;
-    padding-top: 1%;
-    position: sticky;
-    top: 0;
-    padding-left: 3%;
-    padding-bottom: 1%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.pageMainCont {
+    /*width: 100vw;*/
+    min-height: 100vh;
+
 }
 
-.infoHeader h1 {
+.infoHeader {
+    position: sticky;
+    top: 0;
+    /*display: flex;*/
+    /*justify-content: center; whiresmoke get rgb tas transparent tas lagay bg char*/
+    background-color: white;
+    padding-top: 0.5rem;
+    font-family:  'Open Sans', sans-serif;
+    font-weight: 600;
+    padding-bottom: 0;
+    text-align:center;
+    z-index: 3;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.infoHeader h4 {
     color: #086189;
     font-weight: 700;
 }
 
-.infoHeader h2 {
+.currentProf {
     color: #008D85;
+}
 
+.currentSubj {
+    color:gray;
+    font-weight: 400;
+}
+
+.instruction {
+    display: flex;
+    justify-content: center;
+    height: 1.8rem;
+}
+
+.redText {
+    color: red;
 }
 
 .rateP {
-    padding-top: 2%;
+    font-weight: 600;
     font-family:  'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 0.9rem;
+}
+
+.bodyCont {
+    display: flex;
+    background-image: url("https://static.overlay-tech.com/assets/26585e5b-baf0-4fe7-9544-a87704893b4c.png");
+}
+
+.outline {
+    position: fixed;
+    text-align: left;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*z-index: 4;*/
+    /*justify-content: center;*/
+    top:9.1rem;
+    width: 25vw;
+    height: 78vh;
+    padding-top: 3rem;
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+    /*background-color: pink;*/
+}
+
+.buttonNormal {
+    background: none;
+    border: none;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    /*text-align: left;*/
+}
+
+.buttonLined {
+    background: none;
+    border: none;
+    text-decoration-line: underline;
+    margin-bottom: 1rem;    
+    font-weight: 600;
+    color: #008D85;
+    /*text-align: left;*/
+}
+
+.buttonNormal:hover, .buttonLined:hover {
+    text-decoration-line: underline;
+}
+
+.formCont {
+    width: 75vw;
+    min-height: 100vh;
+    padding-top: 1rem;
+    margin-left: 25vw;
+    background-color: rgba(255,255,255,0.5);
 }
 
 .formCard {
     font-family:  'Open Sans', sans-serif;
-    font-size: 21px;
-    max-width: 50%;
+    font-size: 1rem;
+    max-width: 85%;
     background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 3%;
 }
 
 .question {
     background-color: #008D85;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     color: white;
     width: 100%;
     padding-top: 10px;
@@ -56,7 +130,7 @@ body {
 
 .answers {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-left: 4%;
 }
 
@@ -71,26 +145,40 @@ body {
     padding-left: 3%;
 }
 
-.category-heading {
-    color: #086189;
-    font-family:  'Open Sans', sans-serif;
-}
-
 .submitBtn {
     border: none;
     float: right;
     width: 150px;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: #008D85;
-    margin-right: 15%;
+    background-color: lightgray;
+    margin-right: 3%;
     margin-bottom: 2%;
     font-family:  'Open Sans', sans-serif;
-    color: white;
+    color: #008D85;
+    border-radius: 15px;
+}
+
+.goHomeBtn {
+    border: none;
+    float: right;
+    width: 150px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: lightgray;
+    margin-right: 8%;
+    margin-bottom: 2%;
+    font-family:  'Open Sans', sans-serif;
+    color: #008D85;
     border-radius: 15px;
 }
 
 .submitBtn:hover {
-    cursor: pointer;
-    background-color: #086189;
+    background-color: #008D85;
+    color: white;
+}
+
+.goHomeBtn:hover {
+    background-color: #015854;
+    color: white;
 }

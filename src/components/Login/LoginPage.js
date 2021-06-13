@@ -3,7 +3,7 @@ import "../../styles/loginPage.css"
 import upicon from "../../assets/up-logo.png"
 // import uplbg from "../../assets/cropped-uplb-bg.png"
 
-const LoginPage = () => {
+export default function LoginPage(){
     return(
         <div className = "login-main-container">
 
@@ -51,5 +51,3 @@ const LoginPage = () => {
         </div>
     );
 }
-
-export default LoginPage;

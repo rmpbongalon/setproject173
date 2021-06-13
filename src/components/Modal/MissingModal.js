@@ -1,7 +1,7 @@
 import React from 'react'
 import './ConfirmModalStyle.css'
 
-const MissingModal = (props) => {
+export default function MissingModal(props){
 
     if(!props.show) {
         return null
@@ -17,5 +17,3 @@ const MissingModal = (props) => {
         </div>
     )
 }
-
-export default MissingModal

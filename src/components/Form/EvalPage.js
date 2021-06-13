@@ -3,6 +3,7 @@ import { Redirect } from 'react-router-dom'
 import '../../styles/EvalPage.css'
 import ConfirmModal from '../Modal/ConfirmModal'
 import MissingModal from '../Modal/MissingModal'
+import GoHomeModal from '../Modal/GoHomeModal'
 /*
 EvalPage component
     - This component receives the following properties:
@@ -12,7 +13,7 @@ EvalPage component
 */
 
 
-const EvalPage = (props) => {
+export default function EvalPage(props){
     const currentProf = props.location.prof
 
     const [rate, setRate] = useState(null)
@@ -32,6 +33,44 @@ const EvalPage = (props) => {
 
     const [showModal, setShowModal] = useState(false) // Confirmation modal for submission
     const [showMissingModal, setShowMissingModal] = useState(false) // Modal when one of the form is not complete
+    const [showGoHomeModal, setShowGoHomeModal] = useState(false)
+
+    const [showOne, setShowOne] = useState(true);
+    const [showTwo, setShowTwo] = useState(false);
+    const [showThree, setShowThree] = useState(false);
+    const [showFour, setShowFour] = useState(false);
+
+    const toggleOne = (e) => {
+        e.preventDefault();
+        setShowTwo(false);
+        setShowThree(false);
+        setShowFour(false);
+        setShowOne(true);
+    };
+
+    const toggleTwo = (e) => {
+        e.preventDefault();
+        setShowOne(false);
+        setShowThree(false);
+        setShowFour(false);
+        setShowTwo(true);
+    };
+
+    const toggleThree = (e) => {
+        e.preventDefault();
+        setShowOne(false);
+        setShowTwo(false);
+        setShowFour(false);
+        setShowThree(true);
+    };
+
+    const toggleFour = (e) => {
+        e.preventDefault();
+        setShowOne(false);
+        setShowTwo(false);
+        setShowThree(false);
+        setShowFour(true);
+    };
 
     if(currentProf == null) {
         return(
@@ -40,75 +79,90 @@ const EvalPage = (props) => {
     }
 
     return (
-        <>
+        <div className="pageMainCont">
             <div className="infoHeader">
-                <h1> Currently Evaluating:</h1>
-                <h2> {currentProf.name}</h2>  { /*This will be replaced with props.name */}
-                <h2> {currentProf.subject} </h2> {/*  This will be replaced with props.subject */}
+                <h4>Evaluating</h4>
+                <h5 className="currentProf"> {currentProf.name}</h5>  { /*This will be replaced with props.name */}
+                <p className="currentSubj"> {currentProf.subject} </p> {/*  This will be replaced with props.subject */}
                 
+                <div className="instruction">
+                    <p className="redText">*&nbsp;</p>
+                    <p className="rateP"> Rate your professor/instructor with 5 being the highest and 1 being the lowest</p>
+                </div>
             </div>
             
-            <div className="category">
-                <p className="rateP"> Rate your professor/instructor with 5 being the highest and 1 being the lowest</p>
-                <h1 className="category-heading"> Part I: Preparedness</h1>
-                <div className="formCard">
-                    <p className="question"> The faculty-in-charge is always ready with their lesson plans. </p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="1answer1" onChange={(e) => onValueChange(e, 0)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="1answer1" onChange={(e) => onValueChange(e, 0)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="1answer1"  onChange={(e) => onValueChange(e, 0)}/> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="1answer1" onChange={(e) => onValueChange(e, 0)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="1answer1" onChange={(e) => onValueChange(e, 0)}/> 5 </label>
-                    </div>
-                </div>
-
-                <div className="formCard">
-                    <p className="question"> The faculty-in-charge always discusses the objectives of every lesson. </p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="1answer2" onChange={(e) => onValueChange(e, 1)} /> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="1answer2" onChange={(e) => onValueChange(e, 1)} /> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="1answer2" onChange={(e) => onValueChange(e, 1)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="1answer2" onChange={(e) => onValueChange(e, 1)} /> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="1answer2" onChange={(e) => onValueChange(e, 1)} /> 5 </label>
-                    </div>
-                </div>
-
-                <div className="formCard">
-                    <p className="question">The faculty-in-charge clearly discussed the course curriculum at the beginning of classes.</p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="1answer3" onChange={(e) => onValueChange(e, 2)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="1answer3" onChange={(e) => onValueChange(e, 2)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="1answer3" onChange={(e) => onValueChange(e, 2)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="1answer3" onChange={(e) => onValueChange(e, 2)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="1answer3" onChange={(e) => onValueChange(e, 2)}/> 5 </label>
-                    </div>
-                </div>
-
-                <div className="formCard">
-                    <p className="question"> The faculty-in-charge always provides the course materials and/or handouts for each lesson. </p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="1answer4" onChange={(e) => onValueChange(e, 3)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="1answer4" onChange={(e) => onValueChange(e, 3)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="1answer4" onChange={(e) => onValueChange(e, 3)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="1answer4" onChange={(e) => onValueChange(e, 3)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="1answer4" onChange={(e) => onValueChange(e, 3)}/> 5 </label>
-                    </div>
-                </div>
-
-                <div className="formCard">
-                    <p className="question"> The faculty-in-charge knows what they were discussing.</p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="1answer5" onChange={(e) => onValueChange(e, 4)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="1answer5" onChange={(e) => onValueChange(e, 4)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="1answer5" onChange={(e) => onValueChange(e, 4)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="1answer5" onChange={(e) => onValueChange(e, 4)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="1answer5" onChange={(e) => onValueChange(e, 4)}/> 5 </label>
-                    </div>
-                </div>
+            <div className="bodyCont">
+            <div className="outline">
+                <button className={!showOne ? "buttonNormal": "buttonLined"} onClick={toggleOne}>Part I: Preparedness</button>
+                <button className={!showTwo ? "buttonNormal": "buttonLined"} onClick={toggleTwo}>Part II: Student-Faculty Relationship</button>
+                <button className={!showThree ? "buttonNormal": "buttonLined"} onClick={toggleThree}>Part III: Time Management</button>
+                <button className={!showFour ? "buttonNormal": "buttonLined"} onClick={toggleFour}>Part IV: Quality of Requirements</button>
             </div>
 
+            <div className="formCont">
+                <center>
+                {showOne ?
+                <div className="category">
+                    <div className="formCard">
+                        <p className="question"> The faculty-in-charge is always ready with their lesson plans. </p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="1answer1" onChange={(e) => onValueChange(e, 0)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="1answer1" onChange={(e) => onValueChange(e, 0)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="1answer1"  onChange={(e) => onValueChange(e, 0)}/> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="1answer1" onChange={(e) => onValueChange(e, 0)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="1answer1" onChange={(e) => onValueChange(e, 0)}/> 5 </label>
+                        </div>
+                    </div>
+
+                    <div className="formCard">
+                        <p className="question"> The faculty-in-charge always discusses the objectives of every lesson. </p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="1answer2" onChange={(e) => onValueChange(e, 1)} /> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="1answer2" onChange={(e) => onValueChange(e, 1)} /> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="1answer2" onChange={(e) => onValueChange(e, 1)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="1answer2" onChange={(e) => onValueChange(e, 1)} /> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="1answer2" onChange={(e) => onValueChange(e, 1)} /> 5 </label>
+                        </div>
+                    </div>
+
+                    <div className="formCard">
+                        <p className="question">The faculty-in-charge clearly discussed the course curriculum at the beginning of classes.</p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="1answer3" onChange={(e) => onValueChange(e, 2)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="1answer3" onChange={(e) => onValueChange(e, 2)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="1answer3" onChange={(e) => onValueChange(e, 2)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="1answer3" onChange={(e) => onValueChange(e, 2)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="1answer3" onChange={(e) => onValueChange(e, 2)}/> 5 </label>
+                        </div>
+                    </div>
+
+                    <div className="formCard">
+                        <p className="question"> The faculty-in-charge always provides the course materials and/or handouts for each lesson. </p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="1answer4" onChange={(e) => onValueChange(e, 3)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="1answer4" onChange={(e) => onValueChange(e, 3)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="1answer4" onChange={(e) => onValueChange(e, 3)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="1answer4" onChange={(e) => onValueChange(e, 3)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="1answer4" onChange={(e) => onValueChange(e, 3)}/> 5 </label>
+                        </div>
+                    </div>
+
+                    <div className="formCard">
+                        <p className="question"> The faculty-in-charge knows what they were discussing.</p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="1answer5" onChange={(e) => onValueChange(e, 4)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="1answer5" onChange={(e) => onValueChange(e, 4)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="1answer5" onChange={(e) => onValueChange(e, 4)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="1answer5" onChange={(e) => onValueChange(e, 4)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="1answer5" onChange={(e) => onValueChange(e, 4)}/> 5 </label>
+                        </div>
+                    </div>
+                </div>
+                : null
+                }
+
+            {showTwo ?
             <div className="category">
-                <h1 className="category-heading"> Part II: Student-Faculty Relationship</h1>
                 <div className="formCard">
                     <p className="question"> The faculty-in-charge is always available during consultation hours </p>
                     <div className="answers">
@@ -164,9 +218,11 @@ const EvalPage = (props) => {
                     </div>
                 </div>
             </div>
+            : null
+            }
 
+            {showThree ?
             <div className="category">
-                <h1 className="category-heading"> Part III: Time Management</h1>
                 <div className="formCard">
                     <p className="question"> The faculty-in-charge starts the classes on time. </p>
                     <div className="answers">
@@ -222,9 +278,11 @@ const EvalPage = (props) => {
                     </div>
                 </div>
             </div>
+            : null
+            }
 
+            {showFour ?            
             <div className="category">
-                <h1 className="category-heading"> Part IV: Quality of Requirements</h1>
                 <div className="formCard">
                     <p className="question"> Instructions are organized and easy to understand. </p>
                     <div className="answers">
@@ -280,23 +338,33 @@ const EvalPage = (props) => {
                     </div>
                 </div>
             </div>
+            : null
+            }
+            </center>
+                <button className="goHomeBtn" onClick={() => {
+                    setShowGoHomeModal(true)
+                }}>
+                Back To Home 
+                </button>
 
-            <button className="submitBtn" onClick={() => {
-                console.log(rate)
-                if(rate.includes(-1)) {
-                    console.log("There is a radio button left unchecked")
-                    setShowMissingModal(true)
-                } else {
-                    setShowModal(true)
-                }
-            }}>
- 
-            Submit 
-            </button>
+                <button className="submitBtn" onClick={() => {
+                    console.log(rate)
+                    if(rate.includes(-1)) {
+                        console.log("There is a radio button left unchecked")
+                        setShowMissingModal(true)
+                    } else {
+                        setShowModal(true)
+                    }
+                }}>
+                Submit 
+                </button>
+
+
+            </div>
             <ConfirmModal onClose={()=> setShowModal(false)} show={showModal} id={currentProf.id} type={currentProf.type}></ConfirmModal>
             <MissingModal onClose={()=>setShowMissingModal(false)} show={showMissingModal} />
-        </>
+            <GoHomeModal onClose={()=>setShowGoHomeModal(false)} show={showGoHomeModal}/>
+        </div>
+        </div>
     )
 }
-
-export default EvalPage;
