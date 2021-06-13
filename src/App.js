@@ -7,16 +7,19 @@ import './App.css';
 import EvalPage from './components/Form/EvalPage'
 import Home from './components/Home/Home';
 import LoginPage from "./components/Login/LoginPage"
+import { unstable_createMuiStrictModeTheme as createMuiTheme } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/core/styles';
 
 require('react-dom');
 window.React2 = require('react');
 // console.log(window.React1 === window.React2);
+const theme = createMuiTheme();
 
 function App() {
 
     return (
         <div className="App">
-            
+            <ThemeProvider theme={theme}>
             <BrowserRouter>
                 <Switch>
                     <Route path ='/login'
@@ -34,6 +37,7 @@ function App() {
                     <Redirect to="/not-found" />
                 </Switch>
             </BrowserRouter>
+            </ThemeProvider>
         </div>
     );
 }

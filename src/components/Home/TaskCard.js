@@ -1,26 +1,31 @@
 import React from 'react'
 import '../../styles/TaskList.css'
 import { Link } from 'react-router-dom'
+import { Tooltip } from '@material-ui/core'
+
 
 export default function TaskCard(props){
 
     if(props.isDone === "task-rate") {
         return (
-            <Link to={{pathname:"/evaluate", prof: {name: props.name, subject: props.subject, id: props.id, type: props.type}}}>
-                <div className={props.isDone}>
-                    <div className="check-icon">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="1" y="1" width="16" height="16" stroke="#008D85" strokeOpacity="0.56" strokeWidth="2"/>
-                        </svg>
+            
+                <Link to={{pathname:"/evaluate", prof: {name: props.name, subject: props.subject, id: props.id, type: props.type}}}>
+                    <div className={props.isDone}>
+                        <div className="check-icon">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1" y="1" width="16" height="16" stroke="#008D85" strokeOpacity="0.56" strokeWidth="2"/>
+                            </svg>
+                        </div>
+                        <Tooltip title = "Evaluate" id = "tooltip" arrow placement = "bottom-end" style={{margin:"0"}}>
+                            <div className="task-text">
+                                <h1 className="subject">{props.subject}</h1>
+                                <h2 className="section">{props.section}</h2>
+                                <h2 className="prof">{props.name}</h2> 
+                            </div>
+                        </Tooltip>
                     </div>
-
-                    <div className="task-text">
-                        <h1 className="subject">{props.subject}</h1>
-                        <h2 className="section">{props.section}</h2>
-                        <h2 className="prof">{props.name}</h2> 
-                    </div>
-                </div>
-            </Link>
+                </Link>
+            
         )
     } else {
         return (
