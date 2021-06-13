@@ -172,49 +172,49 @@ export default function EvalPage(props){
                         <label className="answer"> <input type="radio" value="4" name="2answer1" onChange={(e) => onValueChange(e, 5)}/> 4 </label>
                         <label className="answer"> <input type="radio" value="5" name="2answer1" onChange={(e) => onValueChange(e, 5)}/> 5 </label>
                     </div>
-                </div>
 
-                <div className="formCard">
-                    <p className="question"> The faculty-in-charge always acknowledges their students’ skills and abilities.</p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="2answer2" onChange={(e) => onValueChange(e, 6)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="2answer2" onChange={(e) => onValueChange(e, 6)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="2answer2" onChange={(e) => onValueChange(e, 6)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="2answer2" onChange={(e) => onValueChange(e, 6)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="2answer2" onChange={(e) => onValueChange(e, 6)}/> 5 </label>
+                    <div className="formCard">
+                        <p className="question"> The faculty-in-charge always acknowledges their students’ skills and abilities</p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="2answer2" onChange={(e) => onValueChange(e, 6)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="2answer2" onChange={(e) => onValueChange(e, 6)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="2answer2" onChange={(e) => onValueChange(e, 6)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="2answer2" onChange={(e) => onValueChange(e, 6)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="2answer2" onChange={(e) => onValueChange(e, 6)}/> 5 </label>
+                        </div>
                     </div>
-                </div>
 
-                <div className="formCard">
-                    <p className="question"> The faculty-in-charge always encourages their students to share their ideas in class. </p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="2answer3" onChange={(e) => onValueChange(e, 7)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="2answer3" onChange={(e) => onValueChange(e, 7)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="2answer3" onChange={(e) => onValueChange(e, 7)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="2answer3" onChange={(e) => onValueChange(e, 7)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="2answer3" onChange={(e) => onValueChange(e, 7)}/> 5 </label>
+                    <div className="formCard">
+                        <p className="question"> The faculty-in-charge always encourages their students to share their ideas in class</p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="2answer3" onChange={(e) => onValueChange(e, 7)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="2answer3" onChange={(e) => onValueChange(e, 7)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="2answer3" onChange={(e) => onValueChange(e, 7)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="2answer3" onChange={(e) => onValueChange(e, 7)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="2answer3" onChange={(e) => onValueChange(e, 7)}/> 5 </label>
+                        </div>
                     </div>
-                </div>
 
-                <div className="formCard">
-                    <p className="question"> The faculty-in-charge provides appropriate feedback about my outputs and performance.</p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="2answer4" onChange={(e) => onValueChange(e, 8)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="2answer4" onChange={(e) => onValueChange(e, 8)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="2answer4" onChange={(e) => onValueChange(e, 8)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="2answer4" onChange={(e) => onValueChange(e, 8)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="2answer4" onChange={(e) => onValueChange(e, 8)}/> 5 </label>
+                    <div className="formCard">
+                        <p className="question"> The faculty-in-charge provides appropriate feedback about my outputs and performance</p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="2answer4" onChange={(e) => onValueChange(e, 8)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="2answer4" onChange={(e) => onValueChange(e, 8)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="2answer4" onChange={(e) => onValueChange(e, 8)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="2answer4" onChange={(e) => onValueChange(e, 8)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="2answer4" onChange={(e) => onValueChange(e, 8)}/> 5 </label>
+                        </div>
                     </div>
-                </div>
 
-                <div className="formCard">
-                    <p className="question"> The faculty-in-charge always prioritizes their students’ welfare. </p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="2answer5" onChange={(e) => onValueChange(e, 9)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="2answer5" onChange={(e) => onValueChange(e, 9)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="2answer5" onChange={(e) => onValueChange(e, 9)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="2answer5" onChange={(e) => onValueChange(e, 9)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="2answer5" onChange={(e) => onValueChange(e, 9)}/> 5 </label>
+                    <div className="formCard">
+                        <p className="question"> The faculty-in-charge always prioritizes their students’ welfare </p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="2answer5" onChange={(e) => onValueChange(e, 9)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="2answer5" onChange={(e) => onValueChange(e, 9)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="2answer5" onChange={(e) => onValueChange(e, 9)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="2answer5" onChange={(e) => onValueChange(e, 9)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="2answer5" onChange={(e) => onValueChange(e, 9)}/> 5 </label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -232,49 +232,49 @@ export default function EvalPage(props){
                         <label className="answer"> <input type="radio" value="4" name="3answer1" onChange={(e) => onValueChange(e, 10)}/> 4 </label>
                         <label className="answer"> <input type="radio" value="5" name="3answer1" onChange={(e) => onValueChange(e, 10)}/> 5 </label>
                     </div>
-                </div>
 
-                <div className="formCard">
-                    <p className="question"> The faculty-in-charge ends the classes on time.</p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="3answer2" onChange={(e) => onValueChange(e, 11)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="3answer2" onChange={(e) => onValueChange(e, 11)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="3answer2" onChange={(e) => onValueChange(e, 11)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="3answer2" onChange={(e) => onValueChange(e, 11)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="3answer2" onChange={(e) => onValueChange(e, 11)}/> 5 </label>
+                    <div className="formCard">
+                        <p className="question"> The faculty-in-charge ends the classes on time</p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="3answer2" onChange={(e) => onValueChange(e, 11)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="3answer2" onChange={(e) => onValueChange(e, 11)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="3answer2" onChange={(e) => onValueChange(e, 11)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="3answer2" onChange={(e) => onValueChange(e, 11)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="3answer2" onChange={(e) => onValueChange(e, 11)}/> 5 </label>
+                        </div>
                     </div>
-                </div>
 
-                <div className="formCard">
-                    <p className="question"> The faculty-in-charge responds to the students’ queries on time. </p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="3answer3" onChange={(e) => onValueChange(e, 12)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="3answer3" onChange={(e) => onValueChange(e, 12)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="3answer3" onChange={(e) => onValueChange(e, 12)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="3answer3" onChange={(e) => onValueChange(e, 12)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="3answer3" onChange={(e) => onValueChange(e, 12)}/> 5 </label>
+                    <div className="formCard">
+                        <p className="question"> The faculty-in-charge responds to the students’ queries on time </p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="3answer3" onChange={(e) => onValueChange(e, 12)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="3answer3" onChange={(e) => onValueChange(e, 12)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="3answer3" onChange={(e) => onValueChange(e, 12)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="3answer3" onChange={(e) => onValueChange(e, 12)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="3answer3" onChange={(e) => onValueChange(e, 12)}/> 5 </label>
+                        </div>
                     </div>
-                </div>
 
-                <div className="formCard">
-                    <p className="question"> The faculty-in-charge uses the time effectively and meaningfully.</p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="3answer4" onChange={(e) => onValueChange(e, 13)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="3answer4" onChange={(e) => onValueChange(e, 13)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="3answer4" onChange={(e) => onValueChange(e, 13)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="3answer4" onChange={(e) => onValueChange(e, 13)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="3answer4" onChange={(e) => onValueChange(e, 13)}/> 5 </label>
+                    <div className="formCard">
+                        <p className="question"> The faculty-in-charge uses the time effectively and meaningfully</p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="3answer4" onChange={(e) => onValueChange(e, 13)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="3answer4" onChange={(e) => onValueChange(e, 13)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="3answer4" onChange={(e) => onValueChange(e, 13)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="3answer4" onChange={(e) => onValueChange(e, 13)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="3answer4" onChange={(e) => onValueChange(e, 13)}/> 5 </label>
+                        </div>
                     </div>
-                </div>
 
-                <div className="formCard">
-                    <p className="question"> The faculty-in-charge does not use the time for personal interests </p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="3answer5" onChange={(e) => onValueChange(e, 14)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="3answer5" onChange={(e) => onValueChange(e, 14)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="3answer5" onChange={(e) => onValueChange(e, 14)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="3answer5" onChange={(e) => onValueChange(e, 14)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="3answer5" onChange={(e) => onValueChange(e, 14)}/> 5 </label>
+                    <div className="formCard">
+                        <p className="question"> The faculty-in-charge does not use the time for personal interests </p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="3answer5" onChange={(e) => onValueChange(e, 14)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="3answer5" onChange={(e) => onValueChange(e, 14)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="3answer5" onChange={(e) => onValueChange(e, 14)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="3answer5" onChange={(e) => onValueChange(e, 14)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="3answer5" onChange={(e) => onValueChange(e, 14)}/> 5 </label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -292,49 +292,49 @@ export default function EvalPage(props){
                         <label className="answer"> <input type="radio" value="4" name="4answer1" onChange={(e) => onValueChange(e, 15)}/> 4 </label>
                         <label className="answer"> <input type="radio" value="5" name="4answer1" onChange={(e) => onValueChange(e, 15)}/> 5 </label>
                     </div>
-                </div>
 
-                <div className="formCard">
-                    <p className="question"> The goal of each requirement is clearly discussed. </p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="4answer2" onChange={(e) => onValueChange(e, 16)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="4answer2" onChange={(e) => onValueChange(e, 16)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="4answer2" onChange={(e) => onValueChange(e, 16)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="4answer2" onChange={(e) => onValueChange(e, 16)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="4answer2" onChange={(e) => onValueChange(e, 16)}/> 5 </label>
+                    <div className="formCard">
+                        <p className="question"> The goal of each requirement is clearly discussed </p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="4answer2" onChange={(e) => onValueChange(e, 16)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="4answer2" onChange={(e) => onValueChange(e, 16)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="4answer2" onChange={(e) => onValueChange(e, 16)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="4answer2" onChange={(e) => onValueChange(e, 16)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="4answer2" onChange={(e) => onValueChange(e, 16)}/> 5 </label>
+                        </div>
                     </div>
-                </div>
 
-                <div className="formCard">
-                    <p className="question"> The requirements are relevant and useful. </p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="4answer3" onChange={(e) => onValueChange(e, 17)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="4answer3" onChange={(e) => onValueChange(e, 17)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="4answer3" onChange={(e) => onValueChange(e, 17)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="4answer3" onChange={(e) => onValueChange(e, 17)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="4answer3" onChange={(e) => onValueChange(e, 17)}/> 5 </label>
+                    <div className="formCard">
+                        <p className="question"> The requirements are relevant and useful </p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="4answer3" onChange={(e) => onValueChange(e, 17)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="4answer3" onChange={(e) => onValueChange(e, 17)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="4answer3" onChange={(e) => onValueChange(e, 17)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="4answer3" onChange={(e) => onValueChange(e, 17)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="4answer3" onChange={(e) => onValueChange(e, 17)}/> 5 </label>
+                        </div>
                     </div>
-                </div>
 
-                <div className="formCard">
-                    <p className="question"> The deadlines of the requirements are just.</p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="4answer4" onChange={(e) => onValueChange(e, 18)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="4answer4" onChange={(e) => onValueChange(e, 18)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="4answer4" onChange={(e) => onValueChange(e, 18)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="4answer4" onChange={(e) => onValueChange(e, 18)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="4answer4" onChange={(e) => onValueChange(e, 18)}/> 5 </label>
+                    <div className="formCard">
+                        <p className="question"> The deadlines of the requirements are just</p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="4answer4" onChange={(e) => onValueChange(e, 18)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="4answer4" onChange={(e) => onValueChange(e, 18)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="4answer4" onChange={(e) => onValueChange(e, 18)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="4answer4" onChange={(e) => onValueChange(e, 18)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="4answer4" onChange={(e) => onValueChange(e, 18)}/> 5 </label>
+                        </div>
                     </div>
-                </div>
 
-                <div className="formCard">
-                    <p className="question"> The grading system is appropriate. </p>
-                    <div className="answers">
-                        <label className="answer"> <input type="radio" value="1" name="4answer5" onChange={(e) => onValueChange(e, 19)}/> 1 </label>
-                        <label className="answer"> <input type="radio" value="2" name="4answer5" onChange={(e) => onValueChange(e, 19)}/> 2 </label>
-                        <label className="answer"> <input type="radio" value="3" name="4answer5" onChange={(e) => onValueChange(e, 19)} /> 3 </label>
-                        <label className="answer"> <input type="radio" value="4" name="4answer5" onChange={(e) => onValueChange(e, 19)}/> 4 </label>
-                        <label className="answer"> <input type="radio" value="5" name="4answer5" onChange={(e) => onValueChange(e, 19)}/> 5 </label>
+                    <div className="formCard">
+                        <p className="question"> The grading system is appropriate </p>
+                        <div className="answers">
+                            <label className="answer"> <input type="radio" value="1" name="4answer5" onChange={(e) => onValueChange(e, 19)}/> 1 </label>
+                            <label className="answer"> <input type="radio" value="2" name="4answer5" onChange={(e) => onValueChange(e, 19)}/> 2 </label>
+                            <label className="answer"> <input type="radio" value="3" name="4answer5" onChange={(e) => onValueChange(e, 19)} /> 3 </label>
+                            <label className="answer"> <input type="radio" value="4" name="4answer5" onChange={(e) => onValueChange(e, 19)}/> 4 </label>
+                            <label className="answer"> <input type="radio" value="5" name="4answer5" onChange={(e) => onValueChange(e, 19)}/> 5 </label>
+                        </div>
                     </div>
                 </div>
             </div>
