@@ -63,9 +63,9 @@ body {
 
 .outline {
     position: fixed;
-    text-align: left;
-    /*display: flex;*/
-    /*flex-direction: column;*/
+    /*text-align: left;*/
+    display: flex;
+    flex-direction: column;
     /*z-index: 4;*/
     /*justify-content: center;*/
     top:9.1rem;
@@ -82,7 +82,7 @@ body {
     border: none;
     margin-bottom: 1rem;
     font-weight: 600;
-    /*text-align: left;*/
+    text-align: left;
 }
 
 .buttonLined {
@@ -92,7 +92,7 @@ body {
     margin-bottom: 1rem;    
     font-weight: 600;
     color: #008D85;
-    /*text-align: left;*/
+    text-align: left;
 }
 
 .buttonNormal:hover, .buttonLined:hover {
